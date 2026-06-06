@@ -17,7 +17,8 @@
                             dark: '#0f172a',
                             surface: '#1e293b',
                             accent: '#10b981',
-                            accentHover: '#059669'
+                            accentHover: '#059669',
+                            global: '#3b82f6'
                         }
                     }
                 }
@@ -35,6 +36,7 @@
                 <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
                 <a href="#skills" class="hover:text-brand-accent transition-colors">Skills</a>
                 <a href="#experience" class="hover:text-brand-accent transition-colors">Experience</a>
+                <a href="#mobility" class="hover:text-brand-global transition-colors">Global Mobility</a>
                 <a href="#achievements" class="hover:text-brand-accent transition-colors">Achievements</a>
             </div>
             <a href="mailto:ananthi1505@gmail.com" class="bg-brand-accent text-brand-dark px-4 py-2 rounded-md font-bold text-xs uppercase tracking-wider hover:bg-brand-accentHover transition-all shadow-md shadow-brand-accent/10">Get In Touch</a>
@@ -43,18 +45,20 @@
 
     <!-- Hero Section -->
     <header id="about" class="relative py-24 px-6 overflow-hidden border-b border-slate-800">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_40%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.08),transparent_40%)]"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="inline-block bg-emerald-500/10 text-brand-accent px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4 border border-emerald-500/20">Available for Opportunities</span>
+            <span class="inline-block bg-brand-global/10 text-blue-400 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6 border border-brand-global/20 animate-pulse">
+                <i class="fas fa-globe-americas mr-1.5"></i> Open to International Relocation & Opportunities Abroad
+            </span>
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-3">Ananthi Sadacharam</h1>
             <p class="text-xl md:text-2xl text-slate-400 font-medium mb-6">Senior Software Developer <span class="text-brand-accent">| 10 Years Experience</span></p>
-            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-                Expert Java developer specialized in designing and executing complex back-end architectures, cloud migrations, and distributed streaming solutions across the global financial and manufacturing sectors.
+            <p class="text-slate-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-8">
+                Expert Java developer with **10 years of experience**[cite: 1] specialized in designing and executing complex back-end architectures, cloud migrations, and distributed streaming solutions for **global financial and manufacturing sectors**[cite: 1]. Proven success delivering impactful solutions for clients across **North America, Asia, and Europe**, and now seeking to bring this expertise to an international engineering team[cite: 1].
             </p>
             
             <!-- Quick Contact Badges -->
             <div class="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-8">
-                <span class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50"><i class="fas fa-map-marker-alt text-brand-accent mr-2"></i>Chennai, India</span>
+                <span class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50"><i class="fas fa-map-marker-alt text-brand-accent mr-2"></i>Chennai, India (Seeking Global Relocation)</span>
                 <a href="tel:+918973155968" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fas fa-phone text-brand-accent mr-2"></i>+91-8973155968</a>
                 <a href="mailto:ananthi1505@gmail.com" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fas fa-envelope text-brand-accent mr-2"></i>ananthi1505@gmail.com</a>
                 <a href="https://www.linkedin.com/in/ananthis/" target="_blank" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fab fa-linkedin text-brand-accent mr-2"></i>LinkedIn</a>
@@ -88,7 +92,7 @@
     <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-white mb-2">Technical Skills</h2>
-            <p class="text-slate-300 text-sm">Click the buttons below to filter and inspect technical categories</p>
+            <p class="text-slate-400 text-sm">Click the filters below to isolate target methodologies</p>
             
             <!-- Skill Filters -->
             <div class="mt-6 flex flex-wrap justify-center gap-2">
@@ -106,7 +110,7 @@
                 <i class="fab fa-java text-2xl text-brand-accent"></i><span class="text-sm font-medium">Java 17+</span>
             </div>
             <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="core">
-                <i class="fas fa-cubes text-2xl text-brand-accent"></i><span class="text-sm font-medium">OOPs & JVM Architecture</span>
+                <i class="fas fa-cubes text-2xl text-brand-accent"></i><span class="text-sm font-medium">OOPs & JVM Memory</span>
             </div>
             <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="core">
                 <i class="fas fa-vial text-2xl text-brand-accent"></i><span class="text-sm font-medium">TDD (JUnit/Mockito)</span>
@@ -126,10 +130,10 @@
                 <i class="fas fa-dharmachakra text-2xl text-brand-accent"></i><span class="text-sm font-medium">Kubernetes & AWS</span>
             </div>
             <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
-                <i class="fas fa-robot text-2xl text-brand-accent"></i><span class="text-sm font-medium">Generative AI (Copilot/Claude)</span>
+                <i class="fas fa-robot text-2xl text-brand-accent"></i><span class="text-sm font-medium">Generative AI Coding</span>
             </div>
             <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
-                <i class="fas fa-terminal text-2xl text-brand-accent"></i><span class="text-sm font-medium">Autosys & Shell Scripting</span>
+                <i class="fas fa-terminal text-2xl text-brand-accent"></i><span class="text-sm font-medium">Autosys Automation</span>
             </div>
             <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
                 <i class="fas fa-box-open text-2xl text-brand-accent"></i><span class="text-sm font-medium">Gradle / Maven</span>
@@ -137,8 +141,52 @@
         </div>
     </section>
 
+    <!-- Global Mobility Focus Section -->
+    <section id="mobility" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="bg-brand-surface/40 p-8 rounded-2xl border border-brand-global/20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <i class="fas fa-plane-departure text-6xl text-brand-global"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white mb-4">Global Mobility & Alignment</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        With a decade of specialized backend engineering experience handling business logic for clients spanning **North America, Europe, and Asia**, I operate natively within international engineering teams and cross-border delivery schedules[cite: 1].
+                    </p>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li><i class="fas fa-passport text-brand-global mr-2"></i> **Visa Readiness:** Relocation-focused with immediate availability for global technical screening processes.</li>
+                        <li><i class="fas fa-sync text-brand-global mr-2"></i> **Cross-Border Delivery:** Years of synchronous engineering alongside onshore partners in Germany and the USA[cite: 1].</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800">
+                    <h4 class="text-xs font-bold text-brand-global uppercase tracking-widest mb-3">Language Sync & Integration</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300 font-semibold">English (Professional Operations)</span>
+                                <span class="text-brand-accent">Bilingual Mastery</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-1.5">
+                                <div class="bg-brand-accent h-1.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300 font-semibold">German Language Track</span>
+                                <span class="text-brand-global">Targeting B2 Proficiency</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-1.5">
+                                <div class="bg-brand-global h-1.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section / Interactive Accordion -->
-    <section id="experience" class="py-20 px-6 bg-slate-900/30 border-t border-b border-slate-800">
+    <section id="experience" class="py-20 px-6 bg-slate-900/30 border-t border-slate-800">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-white mb-12 text-center">Professional Journey</h2>
             
@@ -154,11 +202,11 @@
                         <i id="icon-citi" class="fas fa-chevron-up text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="body-citi" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed">
-                        <p>• Led backend team of 4 for critical systems within Investment Banking Risk & Control, impacting 3,000,000+ North American clients.</p>
-                        <p>• Executed modular migration of legacy applications to Kubernetes microservices, achieving optimal cloud compute footprint.</p>
-                        <p>• Engineered high-performance communication systems via Apache Kafka and distributed storage caching with Redis.</p>
-                        <p>• Implemented standard GenAI unit-test paradigms (Claude, Copilot) boosting development delivery speed by 50%.</p>
-                        <p>• Formulated automated file data processing pipelines with JIL Scripts/Autosys, cutting processing overhead by 20%.</p>
+                        <p>• Led backend development team of 4 for mission-critical applications within Investment Banking Risk & Control, impacting 3,000,000+ North American clients[cite: 1].</p>
+                        <p>• Executed monolithic transformation and legacy application migration to Kubernetes microservices, optimizing memory utilization[cite: 1].</p>
+                        <p>• Engineered distributed asynchronous microservice systems using Apache Kafka streaming and high-speed Redis caching[cite: 1].</p>
+                        <p>• Implemented standard TDD workflows (JUnit/Mockito) alongside modern Generative AI tooling (Copilot, Claude) to accelerate unit testing velocity by 50%[cite: 1].</p>
+                        <p>• Engineered automated batch streams via JIL scripts and Autosys scheduler tools, cutting transaction processing cost parameters by 20%[cite: 1].</p>
                     </div>
                 </div>
 
@@ -168,14 +216,14 @@
                         <div>
                             <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">02/2020 - 09/2021</span>
                             <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
-                            <p class="text-sm text-slate-400">Caterpillar India</p>
+                            <p class="text-sm text-slate-400">Caterpillar India (GGS Engineering Services)</p>
                         </div>
                         <i id="icon-cat" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="body-cat" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
-                        <p>• Engineered globally scales high-volume visualization pipelines using Java, Spring Boot, and Kafka for 200+ engineering teams.</p>
-                        <p>• Developed structural automated notification systems adopting programmatic Strategy and Observer patterns.</p>
-                        <p>• Moderated cross-continental system analysis and execution workflows synchronously with USA project leads.</p>
+                        <p>• Formulated global real-time data analytical utilities using Java, Spring Boot, and Kafka, impacting 200+ specialized engineering layers internationally[cite: 1].</p>
+                        <p>• Constructed automated structural notifications frameworks integrating behavioral Strategy and Observer object-oriented design patterns[cite: 1].</p>
+                        <p>• Controlled structural functional reviews and synchronous requirements extraction in alignment with product divisions in the USA[cite: 1].</p>
                     </div>
                 </div>
 
@@ -185,14 +233,14 @@
                         <div>
                             <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">09/2018 - 02/2020</span>
                             <h3 class="text-xl font-bold text-white">Software Engineer</h3>
-                            <p class="text-sm text-slate-400">Robert Bosch Engineering</p>
+                            <p class="text-sm text-slate-400">Robert Bosch Engineering & Business Solutions</p>
                         </div>
                         <i id="icon-bosch" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="body-bosch" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
-                        <p>• Engineered requirement software utilities incorporating JavaFX and structural Java Collections for 1,500 system users.</p>
-                        <p>• Authored specialized analytical internal plug-ins using modern web scripts improving workflow capacities by 25%.</p>
-                        <p>• Spearheaded structural defect evaluation and system upgrades synchronously with stakeholder endpoints in Germany.</p>
+                        <p>• Maintained specialized planning microservices utilizing Spring Boot, JavaFX, and structural Java Collections for 1,500 enterprise users[cite: 1].</p>
+                        <p>• Built custom web tracking components using core HTML, CSS, and JavaScript layers, escalating workflow output capacities by 25%[cite: 1].</p>
+                        <p>• Partnered extensively alongside offshore teams based directly in Germany to execute performance fine-tuning and requirements architecture mapping[cite: 1].</p>
                     </div>
                 </div>
 
@@ -207,9 +255,9 @@
                         <i id="icon-wipro" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="body-wipro" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
-                        <p>• Constructed real-time configurations handling critical Lloyd's corporate client onboarding application components.</p>
-                        <p>• Automated software validation jobs leveraging programmatic Robotic Process Automation (RPA) workflows.</p>
-                        <p>• Implemented regression validation suites via JUnit dropping release schedule parameters by 50%.</p>
+                        <p>• Engineered real-time configuration streams optimizing global customer onboarding ecosystems for Lloyd's bank banking clients[cite: 1].</p>
+                        <p>• Formulated internal automation scripts mapping core programmatic Robotic Process Automation (RPA) testing configurations[cite: 1].</p>
+                        <p>• Optimized automated deployment regressions through JUnit frameworks, dropping cycle timelines by 50%[cite: 1].</p>
                     </div>
                 </div>
             </div>
@@ -224,28 +272,28 @@
                 <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-award text-xl"></i></div>
                 <div>
                     <h3 class="font-bold text-white text-base mb-1">Batch Topper (97%)</h3>
-                    <p class="text-sm text-slate-400">Wipro Technologies J2EE Core Academy Internship Program.</p>
+                    <p class="text-sm text-slate-400">Wipro Technologies J2EE Academy core development track[cite: 1].</p>
                 </div>
             </div>
             <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
                 <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-medal text-xl"></i></div>
                 <div>
                     <h3 class="font-bold text-white text-base mb-1">Wipro Victory Badge</h3>
-                    <p class="text-sm text-slate-400">Awarded for extensive delivery performance and project contributions.</p>
+                    <p class="text-sm text-slate-400">Awarded for high individual throughput and reliable feature shipment matrices[cite: 1].</p>
                 </div>
             </div>
             <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
                 <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-users text-xl"></i></div>
                 <div>
                     <h3 class="font-bold text-white text-base mb-1">Cross-Functional Commendation</h3>
-                    <p class="text-sm text-slate-400">Recognized at Robert Bosch for driving client satisfaction and system quality metrics.</p>
+                    <p class="text-sm text-slate-400">Recognized at Robert Bosch for driving client satisfaction and system quality metrics[cite: 1].</p>
                 </div>
             </div>
             <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
                 <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-smile text-xl"></i></div>
                 <div>
                     <h3 class="font-bold text-white text-base mb-1">+20% User Satisfaction Boost</h3>
-                    <p class="text-sm text-slate-400">Awarded for updating system workflows using innovative JavaFX frameworks.</p>
+                    <p class="text-sm text-slate-400">Awarded for updating system workflows using innovative JavaFX frameworks[cite: 1].</p>
                 </div>
             </div>
         </div>
