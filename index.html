@@ -1,118 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ananthi Sadacharam | Senior Java Developer</title>
+    <title>Ananthi Sadacharam | Senior Software Developer</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            surface: '#1e293b',
+                            accent: '#10b981',
+                            accentHover: '#059669'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
 
-    <!-- Header / Hero Section -->
-    <header class="bg-slate-900 text-white py-20 px-6 text-center shadow-md">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">Ananthi Sadacharam</h1>
-            <p class="text-xl md:text-2xl text-emerald-400 font-medium mb-6">Senior Java Developer</p>
-            <p class="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-                10 years of experience building scalable enterprise applications. Passionate about Clean Code, TDD, and robust system architecture.
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur border-b border-slate-800 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-brand-accent">AS<span class="text-white">.DEV</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
+                <a href="#skills" class="hover:text-brand-accent transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-brand-accent transition-colors">Experience</a>
+                <a href="#achievements" class="hover:text-brand-accent transition-colors">Achievements</a>
+            </div>
+            <a href="mailto:ananthi1505@gmail.com" class="bg-brand-accent text-brand-dark px-4 py-2 rounded-md font-bold text-xs uppercase tracking-wider hover:bg-brand-accentHover transition-all shadow-md shadow-brand-accent/10">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="relative py-24 px-6 overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_40%)]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-emerald-500/10 text-brand-accent px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4 border border-emerald-500/20">Available for Opportunities</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-3">Ananthi Sadacharam</h1>
+            <p class="text-xl md:text-2xl text-slate-400 font-medium mb-6">Senior Software Developer <span class="text-brand-accent">| 10 Years Experience</span></p>
+            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+                Expert Java developer specialized in designing and executing complex back-end architectures, cloud migrations, and distributed streaming solutions across the global financial and manufacturing sectors.
             </p>
             
-            <!-- Social / Contact Links -->
-            <div class="mt-8 flex justify-center space-x-6 text-2xl">
-                <a href="https://github.com/[your-username]" target="_blank" class="hover:text-emerald-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/[your-profile]" target="_blank" class="hover:text-emerald-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com" class="hover:text-emerald-400 transition-colors" title="Email"><i class="fas fa-envelope"></i></a>
+            <!-- Quick Contact Badges -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-8">
+                <span class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50"><i class="fas fa-map-marker-alt text-brand-accent mr-2"></i>Chennai, India</span>
+                <a href="tel:+918973155968" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fas fa-phone text-brand-accent mr-2"></i>+91-8973155968</a>
+                <a href="mailto:ananthi1505@gmail.com" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fas fa-envelope text-brand-accent mr-2"></i>ananthi1505@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ananthis/" target="_blank" class="bg-brand-surface px-4 py-2 rounded-full border border-slate-700/50 hover:border-brand-accent transition-colors"><i class="fab fa-linkedin text-brand-accent mr-2"></i>LinkedIn</a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <!-- Highlights Grid / Impact Metrics -->
+    <section class="bg-slate-900/50 py-12 px-6 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-brand-surface/40 rounded-xl border border-slate-800">
+                <p class="text-3xl md:text-4xl font-bold text-white mb-1">10</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Years Experience</p>
+            </div>
+            <div class="p-4 bg-brand-surface/40 rounded-xl border border-slate-800">
+                <p class="text-3xl md:text-4xl font-bold text-brand-accent mb-1">3M+</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Users Impacted</p>
+            </div>
+            <div class="p-4 bg-brand-surface/40 rounded-xl border border-slate-800">
+                <p class="text-3xl md:text-4xl font-bold text-white mb-1">50%</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">AI Dev Velocity Boost</p>
+            </div>
+            <div class="p-4 bg-brand-surface/40 rounded-xl border border-slate-800">
+                <p class="text-3xl md:text-4xl font-bold text-brand-accent mb-1">&gt;85%</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Sonar Quality Target</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Core Competencies / Skills -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-emerald-500 pb-2 mb-6">Core Competencies</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="font-semibold text-slate-900 mb-3"><i class="fas fa-code text-emerald-500 mr-2"></i> Backend & Frameworks</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Java, Spring Boot, Spring Data JPA, Microservices Architecture</p>
+    <!-- Interactive Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">On-Demand Skill Set</h2>
+            <p class="text-slate-400 text-sm">Click the buttons below to filter and inspect technical categories</p>
+            
+            <!-- Skill Filters -->
+            <div class="mt-6 flex flex-wrap justify-center gap-2">
+                <button onclick="filterSkills('all')" id="btn-all" class="skill-btn bg-brand-accent text-brand-dark font-bold text-xs px-4 py-2 rounded uppercase tracking-wider transition-all">All</button>
+                <button onclick="filterSkills('core')" id="btn-core" class="skill-btn bg-brand-surface text-slate-300 hover:text-white font-bold text-xs px-4 py-2 rounded uppercase tracking-wider transition-all">Core Architecture</button>
+                <button onclick="filterSkills('frameworks')" id="btn-frameworks" class="skill-btn bg-brand-surface text-slate-300 hover:text-white font-bold text-xs px-4 py-2 rounded uppercase tracking-wider transition-all">Cloud & Frameworks</button>
+                <button onclick="filterSkills('devops')" id="btn-devops" class="skill-btn bg-brand-surface text-slate-300 hover:text-white font-bold text-xs px-4 py-2 rounded uppercase tracking-wider transition-all">DevOps & Automation</button>
+            </div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="skills-grid">
+            <!-- Core -->
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="core">
+                <i class="fab fa-java text-2xl text-brand-accent"></i><span class="text-sm font-medium">Java 17+</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="core">
+                <i class="fas fa-cubes text-2xl text-brand-accent"></i><span class="text-sm font-medium">OOPs & JVM Architecture</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="core">
+                <i class="fas fa-vial text-2xl text-brand-accent"></i><span class="text-sm font-medium">TDD (JUnit/Mockito)</span>
+            </div>
+            <!-- Frameworks -->
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="frameworks">
+                <i class="fas fa-leaf text-2xl text-brand-accent"></i><span class="text-sm font-medium">Spring Boot</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="frameworks">
+                <i class="fas fa-network-wired text-2xl text-brand-accent"></i><span class="text-sm font-medium">Microservices / REST API</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="frameworks">
+                <i class="fas fa-project-diagram text-2xl text-brand-accent"></i><span class="text-sm font-medium">Apache Kafka & Redis</span>
+            </div>
+            <!-- DevOps -->
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
+                <i class="fas fa-dharmachakra text-2xl text-brand-accent"></i><span class="text-sm font-medium">Kubernetes & AWS</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
+                <i class="fas fa-robot text-2xl text-brand-accent"></i><span class="text-sm font-medium">Generative AI (Copilot/Claude)</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
+                <i class="fas fa-terminal text-2xl text-brand-accent"></i><span class="text-sm font-medium">Autosys & Shell Scripting</span>
+            </div>
+            <div class="skill-card p-4 bg-brand-surface rounded-lg border border-slate-800 flex items-center space-x-3" data-category="devops">
+                <i class="fas fa-box-open text-2xl text-brand-accent"></i><span class="text-sm font-medium">Gradle / Maven</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section / Interactive Accordion -->
+    <section id="experience" class="py-20 px-6 bg-slate-900/30 border-t border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Professional Journey</h2>
+            
+            <div class="space-y-6">
+                <!-- Citi -->
+                <div class="bg-brand-surface rounded-xl border border-slate-800 overflow-hidden">
+                    <button onclick="toggleAccordion('citi')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div>
+                            <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">10/2021 - Present</span>
+                            <h3 class="text-xl font-bold text-white">Senior Software Developer</h3>
+                            <p class="text-sm text-slate-400">Citicorp Services</p>
+                        </div>
+                        <i id="icon-citi" class="fas fa-chevron-up text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="body-citi" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed">
+                        <p>• Led backend team of 4 for critical systems within Investment Banking Risk & Control, impacting 3,000,000+ North American clients.</p>
+                        <p>• Executed modular migration of legacy applications to Kubernetes microservices, achieving optimal cloud compute footprint.</p>
+                        <p>• Engineered high-performance communication systems via Apache Kafka and distributed storage caching with Redis.</p>
+                        <p>• Implemented standard GenAI unit-test paradigms (Claude, Copilot) boosting development delivery speed by 50%.</p>
+                        <p>• Formulated automated file data processing pipelines with JIL Scripts/Autosys, cutting processing overhead by 20%.</p>
+                    </div>
                 </div>
-                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="font-semibold text-slate-900 mb-3"><i class="fas fa-layer-group text-emerald-500 mr-2"></i> Architecture & Design</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Test-Driven Development (TDD), CQRS, SOLID Principles, Clean Code</p>
+
+                <!-- Caterpillar -->
+                <div class="bg-brand-surface rounded-xl border border-slate-800 overflow-hidden">
+                    <button onclick="toggleAccordion('cat')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div>
+                            <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">02/2020 - 09/2021</span>
+                            <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+                            <p class="text-sm text-slate-400">Caterpillar India</p>
+                        </div>
+                        <i id="icon-cat" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="body-cat" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
+                        <p>• Engineered globally scales high-volume visualization pipelines using Java, Spring Boot, and Kafka for 200+ engineering teams.</p>
+                        <p>• Developed structural automated notification systems adopting programmatic Strategy and Observer patterns.</p>
+                        <p>• Moderated cross-continental system analysis and execution workflows synchronously with USA project leads.</p>
+                    </div>
                 </div>
-                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="font-semibold text-slate-900 mb-3"><i class="fas fa-tools text-emerald-500 mr-2"></i> Build & DevOps</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Gradle, Maven, Git, CI/CD pipelines, Visual Studio</p>
+
+                <!-- Bosch -->
+                <div class="bg-brand-surface rounded-xl border border-slate-800 overflow-hidden">
+                    <button onclick="toggleAccordion('bosch')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div>
+                            <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">09/2018 - 02/2020</span>
+                            <h3 class="text-xl font-bold text-white">Software Engineer</h3>
+                            <p class="text-sm text-slate-400">Robert Bosch Engineering</p>
+                        </div>
+                        <i id="icon-bosch" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="body-bosch" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
+                        <p>• Engineered requirement software utilities incorporating JavaFX and structural Java Collections for 1,500 system users.</p>
+                        <p>• Authored specialized analytical internal plug-ins using modern web scripts improving workflow capacities by 25%.</p>
+                        <p>• Spearheaded structural defect evaluation and system upgrades synchronously with stakeholder endpoints in Germany.</p>
+                    </div>
+                </div>
+
+                <!-- Wipro -->
+                <div class="bg-brand-surface rounded-xl border border-slate-800 overflow-hidden">
+                    <button onclick="toggleAccordion('wipro')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div>
+                            <span class="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">06/2016 - 08/2018</span>
+                            <h3 class="text-xl font-bold text-white">Project Engineer</h3>
+                            <p class="text-sm text-slate-400">Wipro Technologies</p>
+                        </div>
+                        <i id="icon-wipro" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="body-wipro" class="p-6 pt-0 border-t border-slate-800/50 space-y-3 text-sm text-slate-300 leading-relaxed hidden">
+                        <p>• Constructed real-time configurations handling critical Lloyd's corporate client onboarding application components.</p>
+                        <p>• Automated software validation jobs leveraging programmatic Robotic Process Automation (RPA) workflows.</p>
+                        <p>• Implemented regression validation suites via JUnit dropping release schedule parameters by 50%.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience Synopsis -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-emerald-500 pb-2 mb-6">Professional Journey</h2>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-                A decade of engineering impactful software solutions across global technology leaders and financial institutions, driving code quality and modernization initiatives.
-            </p>
-            <div class="flex flex-wrap gap-3">
-                <span class="bg-slate-200 text-slate-800 px-4 py-2 rounded-md font-medium text-sm">Citi</span>
-                <span class="bg-slate-200 text-slate-800 px-4 py-2 rounded-md font-medium text-sm">Caterpillar</span>
-                <span class="bg-slate-200 text-slate-800 px-4 py-2 rounded-md font-medium text-sm">Bosch</span>
-                <span class="bg-slate-200 text-slate-800 px-4 py-2 rounded-md font-medium text-sm">Wipro</span>
-            </div>
-        </section>
-
-        <!-- Featured Projects -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-emerald-500 pb-2 mb-6">Featured Projects</h2>
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div class="flex justify-between items-start mb-3">
-                    <h3 class="text-xl font-bold text-slate-900">Production-Ready Shopping Cart</h3>
-                    <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-semibold">TDD Focus</span>
-                </div>
-                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                    Designed and built a completely decoupled, robust backend shopping cart platform from scratch. Leveraged strict Test-Driven Development principles to ensure system reliability and maintainability.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Java</span>
-                    <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Spring Boot</span>
-                    <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Gradle</span>
-                    <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">>85% Test Coverage</span>
-                </div>
-                <a href="#" class="text-sm font-semibold text-emerald-600 hover:text-emerald-700 inline-flex items-center">
-                    View Project Code <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Education & Languages -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-emerald-500 pb-2 mb-4">Education</h2>
-                <div class="text-sm">
-                    <h3 class="font-bold text-slate-900 text-base">Bachelor of Engineering (B.E.)</h3>
-                    <p class="text-gray-600">K.S.R. College of Engineering</p>
-                    <p class="text-gray-500 text-xs italic mt-0.5">Affiliated with Anna University</p>
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-white text-center mb-12">Key Recognitions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
+                <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-award text-xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-white text-base mb-1">Batch Topper (97%)</h3>
+                    <p class="text-sm text-slate-400">Wipro Technologies J2EE Core Academy Internship Program.</p>
                 </div>
             </div>
-            <div>
-                <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-emerald-500 pb-2 mb-4">Languages</h2>
-                <ul class="space-y-2 text-sm text-gray-600">
-                    <li><strong class="text-slate-900">English:</strong> Professional Proficiency</li>
-                    <li><strong class="text-slate-900">Tamil:</strong> Native / Bilingual</li>
-                    <li><strong class="text-slate-900">German:</strong> Professional Aspirant (B2 Target)</li>
-                </ul>
+            <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
+                <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-medal text-xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-white text-base mb-1">Wipro Victory Badge</h3>
+                    <p class="text-sm text-slate-400">Awarded for extensive delivery performance and project contributions.</p>
+                </div>
             </div>
-        </section>
-
-    </main>
+            <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
+                <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-users text-xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-white text-base mb-1">Cross-Functional Commendation</h3>
+                    <p class="text-sm text-slate-400">Recognized at Robert Bosch for driving client satisfaction and system quality metrics.</p>
+                </div>
+            </div>
+            <div class="p-6 bg-brand-surface/60 rounded-xl border border-slate-800 flex items-start space-x-4">
+                <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 text-brand-accent"><i class="fas fa-smile text-xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-white text-base mb-1">+20% User Satisfaction Boost</h3>
+                    <p class="text-sm text-slate-400">Awarded for updating system workflows using innovative JavaFX frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-gray-400 py-6 text-center text-xs mt-20">
-        <p>&copy; 2026 Ananthi Sadacharam. Built with Tailwind CSS. Hosted on GitHub Pages.</p>
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-xs border-t border-slate-900">
+        <p>&copy; 2026 Ananthi Sadacharam. Hosted on GitHub Pages.</p>
     </footer>
 
+    <!-- Interactive Script Mechanics -->
+    <script>
+        // Interactive Skill Filter System
+        function filterSkills(category) {
+            const cards = document.querySelectorAll('.skill-card');
+            const buttons = document.querySelectorAll('.skill-btn');
+            
+            // Toggle active classes on filter buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-accent', 'text-brand-dark');
+                btn.classList.add('bg-brand-surface', 'text-slate-300');
+            });
+            document.getElementById(`btn-${category}`).classList.remove('bg-brand-surface', 'text-slate-300');
+            document.getElementById(`btn-${category}`).classList.add('bg-brand-accent', 'text-brand-dark');
+
+            // Filter execution
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Interactive Accordion Controller
+        function toggleAccordion(id) {
+            const content = document.getElementById(`body-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if(content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
 </body>
 </html>
